@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  CoreTwitter
 //
 //  Created by Dave Henke on 10/19/12.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TableViewController : UITableViewController
+
+- (IBAction)refresh:(id)sender;
 
 @end

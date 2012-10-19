@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5556FAB7163174570035E3E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556FAB6163174570035E3E5 /* UIKit.framework */; };
+		5556FAB9163174570035E3E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556FAB8163174570035E3E5 /* Foundation.framework */; };
+		5556FABB163174570035E3E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556FABA163174570035E3E5 /* CoreGraphics.framework */; };
+		5556FAC1163174570035E3E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5556FABF163174570035E3E5 /* InfoPlist.strings */; };
+		5556FAC3163174570035E3E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556FAC2163174570035E3E5 /* main.m */; };
+		5556FAC7163174570035E3E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556FAC6163174570035E3E5 /* AppDelegate.m */; };
+		5556FAC9163174570035E3E5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5556FAC8163174570035E3E5 /* Default.png */; };
+		5556FACB163174570035E3E5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5556FACA163174570035E3E5 /* Default@2x.png */; };
+		5556FACD163174570035E3E5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5556FACC163174570035E3E5 /* Default-568h@2x.png */; };
+		5556FAD0163174570035E3E5 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5556FACE163174570035E3E5 /* MainStoryboard_iPhone.storyboard */; };
+		5556FAF31631772A0035E3E5 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556FAE8163177060035E3E5 /* libRestKit.a */; };
+		5556FAFB163177520035E3E5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556FAF4163177520035E3E5 /* CFNetwork.framework */; };
+		5556FAFC163177520035E3E5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556FAF5163177520035E3E5 /* CoreData.framework */; };
+		5556FAFD163177520035E3E5 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556FAF6163177520035E3E5 /* libxml2.dylib */; };
+		5556FAFE163177520035E3E5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556FAF7163177520035E3E5 /* MobileCoreServices.framework */; };
+		5556FAFF163177520035E3E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556FAF8163177520035E3E5 /* QuartzCore.framework */; };
+		5556FB00163177520035E3E5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556FAF9163177520035E3E5 /* Security.framework */; };
+		5556FB01163177520035E3E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556FAFA163177520035E3E5 /* SystemConfiguration.framework */; };
+		5556FB04163177D30035E3E5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5556FB03163177D30035E3E5 /* TableViewController.m */; };
+		5569146F16317C3F0074D8EA /* GitHubService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5569146E16317C3F0074D8EA /* GitHubService.m */; };
+		5569147216317DD30074D8EA /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5569147016317DD30074D8EA /* DataModel.xcdatamodeld */; };
+		5569147516317FD60074D8EA /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 5569147416317FD60074D8EA /* Event.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5556FAE7163177060035E3E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5556FADC163177060035E3E5 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		5556FAE9163177060035E3E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5556FADC163177060035E3E5 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		5556FAEB163177060035E3E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5556FADC163177060035E3E5 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		5556FAED163177060035E3E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5556FADC163177060035E3E5 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		5556FAEF163177060035E3E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5556FADC163177060035E3E5 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		5556FAF1163177270035E3E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5556FADC163177060035E3E5 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5556FAB2163174570035E3E5 /* CoreGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5556FAB6163174570035E3E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5556FAB8163174570035E3E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5556FABA163174570035E3E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5556FABE163174570035E3E5 /* CoreGithub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreGithub-Info.plist"; sourceTree = "<group>"; };
+		5556FAC0163174570035E3E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5556FAC2163174570035E3E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5556FAC4163174570035E3E5 /* CoreGithub-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreGithub-Prefix.pch"; sourceTree = "<group>"; };
+		5556FAC5163174570035E3E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5556FAC6163174570035E3E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5556FAC8163174570035E3E5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5556FACA163174570035E3E5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5556FACC163174570035E3E5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5556FACF163174570035E3E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		5556FADC163177060035E3E5 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = Restkit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		5556FAF4163177520035E3E5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5556FAF5163177520035E3E5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5556FAF6163177520035E3E5 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		5556FAF7163177520035E3E5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5556FAF8163177520035E3E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5556FAF9163177520035E3E5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5556FAFA163177520035E3E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5556FB02163177D30035E3E5 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		5556FB03163177D30035E3E5 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5556FB051631791B0035E3E5 /* GitHubService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubService.h; sourceTree = "<group>"; };
+		5569146E16317C3F0074D8EA /* GitHubService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubService.m; sourceTree = "<group>"; };
+		5569147116317DD30074D8EA /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		5569147316317FD60074D8EA /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		5569147416317FD60074D8EA /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5556FAAF163174570035E3E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5556FAF31631772A0035E3E5 /* libRestKit.a in Frameworks */,
+				5556FAFB163177520035E3E5 /* CFNetwork.framework in Frameworks */,
+				5556FAFC163177520035E3E5 /* CoreData.framework in Frameworks */,
+				5556FAFD163177520035E3E5 /* libxml2.dylib in Frameworks */,
+				5556FAFE163177520035E3E5 /* MobileCoreServices.framework in Frameworks */,
+				5556FAFF163177520035E3E5 /* QuartzCore.framework in Frameworks */,
+				5556FB00163177520035E3E5 /* Security.framework in Frameworks */,
+				5556FB01163177520035E3E5 /* SystemConfiguration.framework in Frameworks */,
+				5556FAB7163174570035E3E5 /* UIKit.framework in Frameworks */,
+				5556FAB9163174570035E3E5 /* Foundation.framework in Frameworks */,
+				5556FABB163174570035E3E5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5556FAA7163174570035E3E5 = {
+			isa = PBXGroup;
+			children = (
+				5556FABC163174570035E3E5 /* CoreGithub */,
+				5556FAB5163174570035E3E5 /* Frameworks */,
+				5556FAB3163174570035E3E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5556FAB3163174570035E3E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5556FAB2163174570035E3E5 /* CoreGithub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5556FAB5163174570035E3E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5556FADC163177060035E3E5 /* RestKit.xcodeproj */,
+				5556FAB6163174570035E3E5 /* UIKit.framework */,
+				5556FAB8163174570035E3E5 /* Foundation.framework */,
+				5556FABA163174570035E3E5 /* CoreGraphics.framework */,
+				5556FAF4163177520035E3E5 /* CFNetwork.framework */,
+				5556FAF5163177520035E3E5 /* CoreData.framework */,
+				5556FAF6163177520035E3E5 /* libxml2.dylib */,
+				5556FAF7163177520035E3E5 /* MobileCoreServices.framework */,
+				5556FAF8163177520035E3E5 /* QuartzCore.framework */,
+				5556FAF9163177520035E3E5 /* Security.framework */,
+				5556FAFA163177520035E3E5 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5556FABC163174570035E3E5 /* CoreGithub */ = {
+			isa = PBXGroup;
+			children = (
+				55691478163180290074D8EA /* Controller */,
+				55691477163180240074D8EA /* Model */,
+				55691476163180200074D8EA /* UI */,
+				5556FABD163174570035E3E5 /* Supporting Files */,
+			);
+			name = CoreGithub;
+			path = CoreTwitter;
+			sourceTree = "<group>";
+		};
+		5556FABD163174570035E3E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5556FABE163174570035E3E5 /* CoreGithub-Info.plist */,
+				5556FABF163174570035E3E5 /* InfoPlist.strings */,
+				5556FAC2163174570035E3E5 /* main.m */,
+				5556FAC4163174570035E3E5 /* CoreGithub-Prefix.pch */,
+				5556FAC8163174570035E3E5 /* Default.png */,
+				5556FACA163174570035E3E5 /* Default@2x.png */,
+				5556FACC163174570035E3E5 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5556FADD163177060035E3E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5556FAE8163177060035E3E5 /* libRestKit.a */,
+				5556FAEA163177060035E3E5 /* RestKitTests.octest */,
+				5556FAEC163177060035E3E5 /* RestKit.framework */,
+				5556FAEE163177060035E3E5 /* RestKitFrameworkTests.octest */,
+				5556FAF0163177060035E3E5 /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55691476163180200074D8EA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5556FACE163174570035E3E5 /* MainStoryboard_iPhone.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		55691477163180240074D8EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5569147016317DD30074D8EA /* DataModel.xcdatamodeld */,
+				5556FB051631791B0035E3E5 /* GitHubService.h */,
+				5569146E16317C3F0074D8EA /* GitHubService.m */,
+				5569147316317FD60074D8EA /* Event.h */,
+				5569147416317FD60074D8EA /* Event.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		55691478163180290074D8EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5556FAC5163174570035E3E5 /* AppDelegate.h */,
+				5556FAC6163174570035E3E5 /* AppDelegate.m */,
+				5556FB02163177D30035E3E5 /* TableViewController.h */,
+				5556FB03163177D30035E3E5 /* TableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5556FAB1163174570035E3E5 /* CoreGithub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5556FAD9163174570035E3E5 /* Build configuration list for PBXNativeTarget "CoreGithub" */;
+			buildPhases = (
+				5556FAAE163174570035E3E5 /* Sources */,
+				5556FAAF163174570035E3E5 /* Frameworks */,
+				5556FAB0163174570035E3E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5556FAF2163177270035E3E5 /* PBXTargetDependency */,
+			);
+			name = CoreGithub;
+			productName = CoreTwitter;
+			productReference = 5556FAB2163174570035E3E5 /* CoreGithub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5556FAA9163174570035E3E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Solstice Mobile";
+			};
+			buildConfigurationList = 5556FAAC163174570035E3E5 /* Build configuration list for PBXProject "CoreGithub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5556FAA7163174570035E3E5;
+			productRefGroup = 5556FAB3163174570035E3E5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5556FADD163177060035E3E5 /* Products */;
+					ProjectRef = 5556FADC163177060035E3E5 /* RestKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5556FAB1163174570035E3E5 /* CoreGithub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5556FAE8163177060035E3E5 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 5556FAE7163177060035E3E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5556FAEA163177060035E3E5 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 5556FAE9163177060035E3E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5556FAEC163177060035E3E5 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 5556FAEB163177060035E3E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5556FAEE163177060035E3E5 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 5556FAED163177060035E3E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5556FAF0163177060035E3E5 /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = 5556FAEF163177060035E3E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5556FAB0163174570035E3E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5556FAC1163174570035E3E5 /* InfoPlist.strings in Resources */,
+				5556FAC9163174570035E3E5 /* Default.png in Resources */,
+				5556FACB163174570035E3E5 /* Default@2x.png in Resources */,
+				5556FACD163174570035E3E5 /* Default-568h@2x.png in Resources */,
+				5556FAD0163174570035E3E5 /* MainStoryboard_iPhone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5556FAAE163174570035E3E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5556FAC3163174570035E3E5 /* main.m in Sources */,
+				5556FAC7163174570035E3E5 /* AppDelegate.m in Sources */,
+				5556FB04163177D30035E3E5 /* TableViewController.m in Sources */,
+				5569146F16317C3F0074D8EA /* GitHubService.m in Sources */,
+				5569147216317DD30074D8EA /* DataModel.xcdatamodeld in Sources */,
+				5569147516317FD60074D8EA /* Event.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5556FAF2163177270035E3E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 5556FAF1163177270035E3E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5556FABF163174570035E3E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5556FAC0163174570035E3E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5556FACE163174570035E3E5 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5556FACF163174570035E3E5 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5556FAD7163174570035E3E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5556FAD8163174570035E3E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5556FADA163174570035E3E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreTwitter/CoreGithub-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "CoreTwitter/CoreGithub-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = CoreGithub;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5556FADB163174570035E3E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreTwitter/CoreGithub-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "CoreTwitter/CoreGithub-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = CoreGithub;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5556FAAC163174570035E3E5 /* Build configuration list for PBXProject "CoreGithub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5556FAD7163174570035E3E5 /* Debug */,
+				5556FAD8163174570035E3E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5556FAD9163174570035E3E5 /* Build configuration list for PBXNativeTarget "CoreGithub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5556FADA163174570035E3E5 /* Debug */,
+				5556FADB163174570035E3E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5569147016317DD30074D8EA /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5569147116317DD30074D8EA /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 5569147116317DD30074D8EA /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5556FAA9163174570035E3E5 /* Project object */;
+}
