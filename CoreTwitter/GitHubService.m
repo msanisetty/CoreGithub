@@ -38,12 +38,22 @@
 }
 
 - (void)eventsWithCompletion:(void (^)(NSArray *))success andErrors:(void (^)(NSError *))errors {
-    
+    [self.objectManager loadObjectsAtResourcePath:@"events" usingBlock:^(RKObjectLoader *loader){
+        [loader setOnDidFailWithError:^(NSError *err){
+            errors(err);
+        }];
+        [loader setOnDidFailLoadWithError:^(NSError *err){
+            errors(err);
+        }];
+        [loader setOnDidLoadObjects:^(NSArray *objects){
+            success(objects);
+        }];
+    }];
 }
 
 - (void)storedEventsWithCompletion:(void (^)(NSArray *))success andErrors:(void (^)(NSError *))errors {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSManagedObjectContext *context = self.objectManager.objectStore.managedObjectContextForCurrentThread;
+        NSManagedObjectContext *context = self.objectManager.objectStore.primaryManagedObjectContext;
         NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:context];
         NSFetchRequest *request = [[NSFetchRequest alloc] init];
         request.entity = entityDescription;

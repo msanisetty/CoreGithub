@@ -32,6 +32,7 @@
     [super viewDidLoad];
     [[GitHubService shared] storedEventsWithCompletion:^(NSArray *array){
         self.data = array;
+        [self.tableView reloadData];
     } andErrors:^(NSError *err){
         [[[UIAlertView alloc] initWithTitle:@"Failed Fetch Request" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     }];
